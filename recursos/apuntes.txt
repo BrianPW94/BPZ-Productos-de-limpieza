@@ -1,0 +1,52 @@
+.tarjeta h5{
+    font-size: 20px;
+
+}.product-name{
+    background-color: black;
+    text-decoration: solid;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.product-name:hover{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+*/Como centrar un div en columnas de 3 x 3*/
+.productos-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas de igual tamaño */
+    grid-template-rows: repeat(3, 100px); /* Crea 3 filas de altura fija de 100px */
+    gap: 10px; /* Espacio entre las celdas */
+}
+
+.item {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/*Como poner una fuente con var*/
+
+
+:root{
+   --text-font: Poppins;
+   --section-title-font:Poppins-bold;
+   --header-title-font: Poppins;
+}
+
+@font-face{
+    font-family: Poppins;  <-- Esto es el nombre
+    src: url(recursos/fonts/Poppins-Regular.ttf);  
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: Poppins-bold;  <-- Esto es el nombre
+    src: url(recursos/fonts/Poppins-Bold.ttf);
+    font-weight: bold;
+}
